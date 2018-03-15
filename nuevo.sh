@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if ! [ -e dom ]; then
+	echo "planet" > dom
+	echo "lan" >> dom
+fi
+
 renum='^[0-9]+$'
 
 read -p "UID: " uid
